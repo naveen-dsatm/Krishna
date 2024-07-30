@@ -1,0 +1,25 @@
+body {
+    background-image:url(space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input[type="submit"] {
+    align:center;
+    display: block;
+    margin-top:400px;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #f2f0f0;
+    border-radius: 5px;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;}

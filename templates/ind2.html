@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಉತ್ತರಿಸು</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='ind2.css')}}">
+    
+
+       
+       
+</head>
+<body>
+    <div class="container">
+        <h2>ಉತ್ತರಿಸು</h2>
+        <form id="questionsForm" action="submit.php" method="POST">
+            <div class="question">
+                <label for="question1">ನನ್ನ ಸೃಷ್ಟಿಯ ಬಗ್ಗೆ ನಿನಗೆ ಅರಿವಿದೆಯೇ?</label>
+                <select id="question1" name="question1" required>
+                    <option value="" disabled selected>ಉತ್ತರಿಸು</option>
+                    <option value="yes">ಹೌದು</option>
+                    <option value="no">ಇಲ್ಲ</option>
+                </select>
+                <div class="error" id="error1">ಉತ್ತರಿಸು</div>
+            </div>
+
+            <div class="question">
+                <label for="question2">ನೀನ್ಯಾರೆಂದು ನಿನಗೆ ತಿಳಿದಿಯೇ?</label>
+                <select id="question2" name="question2" required>
+                    <option value="" disabled selected>ಉತ್ತರಿಸು</option>
+                    <option value="yes">ಹೌದು</option>
+                    <option value="no">ಇಲ್ಲ</option>
+                </select>
+                <div class="error" id="error2">ಉತ್ತರಿಸು</div>
+            </div>
+
+            <div class="question">
+                <label for="question3">ನಾನ್ಯಾರೆಂದು ನಿನಗೆ ತಿಳಿದಿಯೇ?</label>
+                <select id="question3" name="question3" required>
+                    <option value="" disabled selected>ಉತ್ತರಿಸು</option>
+                    <option value="yes">ಹೌದು</option>
+                    <option value="no">ಇಲ್ಲ</option>
+                </select>
+                <div class="error" id="error3">ಉತ್ತರಿಸು</div>
+            </div>
+            
+        </form>
+    </div>
+    <form action="/Krishna10">
+        <input type="submit" id="Krishna"  name="Krishna" action="/Krishna10" value="ಸಲ್ಲಿಸು">
+        </form>
+    <h2>ಉತ್ತರಿಸು ಇಲ್ಲವೆ, ಈ ಪ್ರಶ್ನೆಗಳ ದ್ವಂದ್ವ ಬೇಡವಾದಲ್ಲಿ ಶರಣಾಗು - ಕಾಣಲು ನನ್ನ</h2>
+    <div class="but">
+    <form action="/Krishna4">
+        <input type="submit" id="Krishna"  name="Krishna" action="/Krishna4" value="ಶರಣಾಗು">
+     </form>
+    </div>
+</body>
+</html>

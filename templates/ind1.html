@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown with Answers</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='ind1.css')}}">
+       
+</head>
+<body>
+    <div class="dropdown">
+        <button>ಪ್ರಶ್ನೆಗಳು</button>
+        <div class="dropdown-content">
+            <a href="#answer1">ಆತ್ಮ ಎಂದರೆ ಯಾರು?</a>
+            <a href="#answer2">ಯಾವುದು ಸರಿ? ಲೌಕಿಕ ಅಥಾವಾ ಅಲೋಕಿಕ ಜೀವನ.</a>
+            <a href="#answer3">ನಿನ್ನ ತಲುಪುವ ಮಾರ್ಗ ಯಾವುದು?</a>
+            <a href="#answer4">ನನ್ನಲ್ಲಿ ಭಕ್ತಿ ಇದೆಯೇ?</a>
+        </div>
+    </div>
+
+    <div id="answer1" class="answer">
+        <h3>ಆತ್ಮ ಎಂದರೆ ಯಾರು?</h3>
+        <p>ಕೃಷ್ಣ : ನಿನ್ನೊಳಗಿರುವ ನಾನು.</p>
+    </div>
+
+    <div id="answer2" class="answer">
+        <h3>ಯಾವುದು ಸರಿ? ಲೌಕಿಕ ಅಥಾವಾ ಅಲೋಕಿಕ ಜೀವನ </h3>
+        <p>ಕೃಷ್ಣ :ಲೌಕಿಕದಲ್ಲಿನ ಅಲೌಕಿಕವಾದ ಸಾತ್ವಿಕ ಜೀವನ</p>
+    </div>
+
+    <div id="answer3" class="answer">
+        <h3>ನಿನ್ನ ತಲುಪುವ ಮಾರ್ಗ ಯಾವುದು?</h3>
+        <p>ಕೃಷ್ಣ :ನಿಷ್ಕಲ್ಮಶ ಭಕ್ತಿ</p>
+    </div>
+
+    <div id="answer4" class="answer">
+        <h3>ನನ್ನಲ್ಲಿ ಭಕ್ತಿ ಇದೆಯೇ?</h3>
+        <p>ಕೃಷ್ಣ :ನಿನ್ನಲ್ಲಿ ಸಮರ್ಪಣೆ ಇದೆಯೇ?</p>
+    </div>
+
+    <form action="/Krishna3">
+        <input type="submit" id="Krishna" title="move to next section" name="Krishna" action="/Krishna3" value="ಮುಂದುವರಿಸಿ">
+       </form>
+
+
+
+</body>
+</html>

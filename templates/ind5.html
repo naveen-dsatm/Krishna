@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Website of ದೇವ್ರು</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='ind3.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h2>ಕೃಷ್ಣ ಅನ್ನು ಕಾಣುವೆನು</h2>
+        <form>
+            <label for="krishnaInput">ಕೃಷ್ಣ</label>
+            <input type="text" id="krishnaInput" name="userInput" pattern="ಕೃಷ್ಣ" required>
+            <button type="button" onclick="enableSubmit()">ಕೃಷ್ಣ(ಒತ್ತಿ)</button>
+        </form>
+        <form action="/Krishna7">
+            <input type="submit" id="submitButton" name="Krishna" value="ಶರಣಾಗು" disabled>
+        </form>
+    </div>
+
+    <script>
+        function enableSubmit() {
+            // Get the input value and the submit button
+            const input = document.getElementById('krishnaInput').value;
+            const submitButton = document.getElementById('submitButton');
+
+            // Enable the submit button if the input matches the pattern
+            if (input === 'ಕೃಷ್ಣ') {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        // Event listener to check input value in real-time
+        document.getElementById('krishnaInput').addEventListener('input', enableSubmit);
+    </script>
+</body>
+</html>

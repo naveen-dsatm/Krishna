@@ -1,0 +1,28 @@
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #f2f0f0;
+    border-radius: 5px;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+    body {
+      margin-top:300px ;
+      background-image: url(space.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 35px; /* Space between the buttons */
+    }
